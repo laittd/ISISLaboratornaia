@@ -47,7 +47,7 @@ public class ConsoleMain {
 
 
     static int inputKey() {
-        System.out.println("Введите 1, 2... ");
+        System.out.println("Введите 1, для ввод с клавиатуры, для ввода с файла введите 2... ");
         return getNum();
     }
 
