@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!-- Секция аппендеров -->
+    <Appenders>
+        <!-- Консольный аппендер -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%5p %d{yyyy-MM-dd HH:mm:ss} %c{1}:%L - %m %n"/>
+        </Console>
+        <!-- Файловые аппендеры -->
+        <File name="InfoFile" fileName="info.log">
+            <PatternLayout pattern="%5p %d{yyyy-MM-dd HH:mm:ss} %c{1}:%L - %m %n"/>
+        </File>
+        <File name="WarnFile" fileName="warn.log">
+            <PatternLayout pattern="%5p %d{yyyy-MM-dd HH:mm:ss} %c{1}:%L - %m %n"/>
+        </File>
+    </Appenders>
+    <!-- Секция логгеров -->
+    <Loggers>
+        <Logger name="sample" level="debug"/>
+        <Root level="all">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="InfoFile" level="debug"/>
+            <AppenderRef ref="WarnFile" level="warn"/>
+        </Root>
+    </Loggers>
+</Configuration>
