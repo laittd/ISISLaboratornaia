@@ -257,7 +257,7 @@ public class ConsoleMain {
                 }
                 break;
                 default: {
-                    System.out.println("Введенно неверное значение!");
+                    System.out.println("Введенно неверное значение! Внесение изминений");
                 }
                 break;
 
