@@ -13,7 +13,7 @@ public class ConsoleMain {
         a = getFloat();
         System.out.print("Введите 2 число: ");
         b = getFloat();
-        System.out.print("Введите 8 число: ");
+        System.out.print("Введите 4 число: ");
         c = getFloat();
 
         return new float[]{a, b, c};
